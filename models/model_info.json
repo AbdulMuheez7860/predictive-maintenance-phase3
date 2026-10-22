@@ -1,0 +1,55 @@
+{
+  "model_name": "Gradient Boosting",
+  "selection_rule": "highest F1-score on the held-out test set",
+  "trained_at": "2026-10-22 06:16:24",
+  "sklearn_version": "1.9.1",
+  "feature_columns": [
+    "Type",
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]"
+  ],
+  "split": {
+    "test_size": 0.2,
+    "random_state": 42,
+    "train_rows": 8000,
+    "test_rows": 2000
+  },
+  "metrics": {
+    "Accuracy": 0.9855,
+    "Precision": 0.8823529411764706,
+    "Recall": 0.6617647058823529,
+    "Specificity": 0.9968944099378882,
+    "F1-score": 0.7563025210084033
+  },
+  "confusion_matrix": {
+    "TN": 1926,
+    "FP": 6,
+    "FN": 23,
+    "TP": 45
+  },
+  "training_ranges": {
+    "Air temperature [K]": [
+      295.3,
+      304.5
+    ],
+    "Process temperature [K]": [
+      305.7,
+      313.8
+    ],
+    "Rotational speed [rpm]": [
+      1168.0,
+      2886.0
+    ],
+    "Torque [Nm]": [
+      3.8,
+      76.6
+    ],
+    "Tool wear [min]": [
+      0.0,
+      253.0
+    ]
+  }
+}
